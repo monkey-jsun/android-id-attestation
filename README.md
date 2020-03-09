@@ -14,4 +14,7 @@ Tested on a several phones (nexus 5x, pixel 4, oneplus 7).  They all show IDs ar
 
 Also it is not clear to me how to separate key generation step from key attestation step.  Right now they are molded together. 
 
-Would love from you!
+Would love to hear from you!
+
+References:
+- key generation and retrival is inspired by this kotlin demo, https://github.com/nodh/android-key-attestation-demo
