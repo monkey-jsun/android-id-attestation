@@ -6,7 +6,7 @@
     <dist:module dist:instant="true" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.READ_PREVILIGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILIGED_PHONE_STATE"/>
 
     <application
         android:allowBackup="true"
