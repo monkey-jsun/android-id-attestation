@@ -217,15 +217,24 @@ public class MainActivity extends AppCompatActivity {
         printOptional(
                 authorizationList.attestationApplicationIdBytes,
                 indent + "Attestation Application ID Bytes");
-        printOptional(authorizationList.attestationIdBrand, indent + "Attestation ID Brand");
-        printOptional(authorizationList.attestationIdDevice, indent + "Attestation ID Device");
-        printOptional(authorizationList.attestationIdProduct, indent + "Attestation ID Product");
-        printOptional(authorizationList.attestationIdSerial, indent + "Attestation ID Serial");
-        printOptional(authorizationList.attestationIdImei, indent + "Attestation ID IMEI");
-        printOptional(authorizationList.attestationIdMeid, indent + "Attestation ID MEID");
-        printOptional(
-                authorizationList.attestationIdManufacturer, indent + "Attestation ID Manufacturer");
-        printOptional(authorizationList.attestationIdModel, indent + "Attestation ID Model");
+
+        if (authorizationList.attestationIdBrand.isPresent())
+                myprint(indent + "Attestation ID Brand:" + new String(authorizationList.attestationIdBrand.get(), UTF_8));
+        if (authorizationList.attestationIdDevice.isPresent())
+                myprint(indent + "Attestation ID Device:" + new String(authorizationList.attestationIdDevice.get(), UTF_8));
+        if (authorizationList.attestationIdProduct.isPresent())
+                myprint(indent + "Attestation ID Product:" + new String(authorizationList.attestationIdProduct.get(), UTF_8));
+        if (authorizationList.attestationIdSerial.isPresent())
+                myprint(indent + "Attestation ID Serial:" + new String(authorizationList.attestationIdSerial.get(), UTF_8));
+        if (authorizationList.attestationIdImei.isPresent())
+                myprint(indent + "Attestation ID IMEI:" + new String(authorizationList.attestationIdImei.get(), UTF_8));
+        if (authorizationList.attestationIdMeid.isPresent())
+                myprint(indent + "Attestation ID MEID:" + new String(authorizationList.attestationIdMeid.get(), UTF_8));
+        if (authorizationList.attestationIdManufacturer.isPresent())
+                myprint(indent + "Attestation ID Manufacturer:" + new String(authorizationList.attestationIdManufacturer.get(), UTF_8));
+        if (authorizationList.attestationIdModel.isPresent())
+                myprint(indent + "Attestation ID Model:" + new String(authorizationList.attestationIdModel.get(), UTF_8));
+
         printOptional(authorizationList.vendorPatchLevel, indent + "Vendor Patch Level");
         printOptional(authorizationList.bootPatchLevel, indent + "Boot Patch Level");
     }
