@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        myprint("app starting ...\n");
+        myprint("Apparently in order to perform id attestation, one needs to create a key first.  Then one can perform attestation as part of retrieveing the key. So first create a key with an name/alias of your choice, then retrieve it to see the attestation (if successful).\n");
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -294,6 +294,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void myprint(String msg) {
+        Log.i("jsun", msg + "\n");
         output.append(msg + "\n");
     }
 }
