@@ -80,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
                 } catch (Exception ignore) {}
             }
         });
+
+        ((Button)findViewById(R.id.buttonClear)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText("");
+            }
+        });
+
         myprint("app starting ...\n");
     }
 

@@ -60,6 +60,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="del key" />
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="clear" />
         </LinearLayout>
 
         <ScrollView
